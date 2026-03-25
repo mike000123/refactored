@@ -130,7 +130,7 @@ elif cfg.mode == "Crisis Similarity (template)":
     labels = LABELS
     if error_msg:
         st.error(error_msg)
-        st.stop()
+        # Don't stop — fall through so the rest of the page remains usable
 else:
     gold_stats = None
     res, core_keys, thresholds, dirs, weights = run_accel(

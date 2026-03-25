@@ -152,6 +152,10 @@ A higher weight means that indicator has more influence.
             ["Full history", "Last 15y", "Last 5y", "Crisis window only", "Crisis window ±5y"],
             index=0,
         )
+        cfg.show_indicator_thresholds = st.checkbox(
+            "Show indicator bull/bear thresholds on sparklines",
+            value=True,
+        )
 
         # ── Triggers ─────────────────────────────────────────────────────────
         st.subheader("Trigger")
